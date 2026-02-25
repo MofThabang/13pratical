@@ -44,9 +44,32 @@ import java.text.
             int mid = (low +high)/2;
 
             if (arr[mid].key ==key)
-            return mid
+            return mid;
+            
+            else if(arr[mid].key<key)
+            low=mid +1;
+            
+            else(arr[mid].key>key)
+            high= mid -1;
           }
-        }
+        }return -1;
+
+        long start= System.currentTimeMillis();
+        linearSearch(arr;key):
+        long finish= System.currentTimeMillis();
+
+        double time = (finish - start)/1 000 000 ;
+        linearTime += time;
+        linearTime2 += time * time ; 
+
+        long start= System.currentTimeMillis();
+        binarySearch(arr;key):
+        long finish= System.currentTimeMillis();
+
+        double time = (finish - start)/1 000 000 ;
+        bibaryTime += time;
+        binaryTime2 += time * time ; 
+
 
           
 
