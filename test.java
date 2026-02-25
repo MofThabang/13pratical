@@ -20,7 +20,34 @@ import java.text.
         double linearTime =0,linearTime2 =0;
         double binaryTime =0,binaryTime2 =0;
         double TotalTime =0;
-        
+
+        int repetitions= 30
+        buffereader rand= new buffereader(loadData());
+
+        for (int r=0; r< repetitions ; r++){
+          int key = rand.nextIn(32654) + 1;
+        }
+
+        static int linearSearch(Node[]arr.int key){
+          for( int i=0; i<arr.length;i++){
+            if( arr[i].key==key)
+            return i;
+          }
+          return -i
+        }
+
+        static int binarySearch(Node[arr.int key]){
+          int low=o;
+          int high= arr.leght -1;
+
+          while(low<high){
+            int mid = (low +high)/2;
+
+            if (arr[mid].key ==key)
+            return mid
+          }
+        }
+
           
 
           
