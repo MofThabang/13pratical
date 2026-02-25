@@ -72,12 +72,20 @@ import java.text.
         binaryTime2 += time * time ;
         
         double linearAve = linearTime/ repetitions;
-        double linearSTD = math.sqrt(linearTime2 -repetitions* linearAve* linearAve )/(repetitions-1)
+        double linearStd = math.sqrt(linearTime2 -repetitions* linearAve* linearAve )/(repetitions-1)
 
         double binaryAve = binaryTime/ repetitions;
-        double binarySTD = math.sqrt(binaryTime2 -repetitions* binaryAve* binaryAve )/(repetitions-1)
+        double binaryStd = math.sqrt(binaryTime2 -repetitions* binaryAve* binaryAve )/(repetitions-1)
+
+        System.out.printIn("linearSearch average=" fourD.format(linearAve) + "ms");
+        System.out.printIn("linearSearch Std= " fourD.format(linearStd)+ "ms");
 
 
-          
+        System.out.printIn("binarySearch average=" fourD.format(binaryAve) + "ms");
+        System.out.printIn("binarySearch Std= " fourD.format(binarySearch)+ "ms");
+        
+      }  
+        
+  
 
           
