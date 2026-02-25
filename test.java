@@ -9,6 +9,7 @@ import java.text.
       key=k
       data=d
     }
+  }
 
         public class timeMethods{
         public static int N =32654  
@@ -68,7 +69,13 @@ import java.text.
 
         double time = (finish - start)/1 000 000 ;
         bibaryTime += time;
-        binaryTime2 += time * time ; 
+        binaryTime2 += time * time ;
+        
+        double linearAve = linearTime/ repetitions;
+        double linearSTD = math.sqrt(linearTime2 -repetitions* linearAve* linearAve )/(repetitions-1)
+
+        double binaryAve = binaryTime/ repetitions;
+        double binarySTD = math.sqrt(binaryTime2 -repetitions* binaryAve* binaryAve )/(repetitions-1)
 
 
           
